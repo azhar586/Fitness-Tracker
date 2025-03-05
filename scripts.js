@@ -1,3 +1,66 @@
+// Profile Page Logic
+const profileForm = document.getElementById("profileForm");
+const profilePic = document.getElementById("profilePic");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const profilePicInput = document.getElementById("profilePicInput");
+
+const savedProfilePic = document.getElementById("savedProfilePic");
+const savedName = document.getElementById("savedName");
+const savedEmail = document.getElementById("savedEmail");
+
+// Load profile data from local storage when the page loads
+if (profileForm) {
+  window.onload = function() {
+    const storedName = localStorage.getItem("name");
+    const storedEmail = localStorage.getItem("email");
+    const storedProfilePic = localStorage.getItem("profilePic");
+
+    if (storedName) {
+      nameInput.value = storedName;
+      savedName.textContent = `Name: ${storedName}`;
+    }
+
+    if (storedEmail) {
+      emailInput.value = storedEmail;
+      savedEmail.textContent = `Email: ${storedEmail}`;
+    }
+
+    if (storedProfilePic) {
+      profilePic.src = storedProfilePic;
+      savedProfilePic.src = storedProfilePic;
+    }
+  };
+
+  // Save profile data to local storage
+  profileForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = nameInput.value;
+    const email = emailInput.value;
+    const profilePicFile = profilePicInput.files[0];
+
+    localStorage.setItem("name", name);
+    localStorage.setItem("email", email);
+
+    savedName.textContent = `Name: ${name}`;
+    savedEmail.textContent = `Email: ${email}`;
+
+    if (profilePicFile) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const profilePicDataUrl = e.target.result;
+        localStorage.setItem("profilePic", profilePicDataUrl);
+        profilePic.src = profilePicDataUrl;
+        savedProfilePic.src = profilePicDataUrl;
+      };
+      reader.readAsDataURL(profilePicFile);
+    } else {
+      savedProfilePic.src = profilePic.src;
+    }
+  });
+}
+
 // Exercise Tracker Logic
 let totalCalories = 0;
 const addedExercises = document.getElementById("addedExercises");
