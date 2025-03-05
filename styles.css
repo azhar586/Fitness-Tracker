@@ -116,3 +116,64 @@ footer {
   object-fit: cover;
   margin: 10px;
 }
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  /* Navigation */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Section Styling */
+  .section {
+    padding: 20px;
+  }
+
+  /* Card Design */
+  .exercise-list, .meal-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exercise-card, .meal-card {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+  /* Home Page Images */
+  #home .home-images img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Profile Form */
+  .profile-container {
+    padding: 20px;
+  }
+
+  .profile-container form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .profile-container input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .profile-container button {
+    width: 100%;
+  }
+}
+
+
+
+
+
