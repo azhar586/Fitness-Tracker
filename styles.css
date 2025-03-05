@@ -109,6 +109,7 @@ footer {
   color: white;
   padding: 10px 0;
 }
+
 /* Home Page Images */
 #home .home-images img {
   width: 400px;  /* Increased the width */
@@ -116,6 +117,7 @@ footer {
   object-fit: cover;
   margin: 10px;
 }
+
 /* Profile Page Styles */
 .profile-container {
   background-color: white;
@@ -184,6 +186,7 @@ footer {
   font-size: 18px;
   margin: 10px 0;
 }
+
 /* Mobile View Adjustments */
 @media (max-width: 768px) {
   /* Navigation */
@@ -239,8 +242,19 @@ footer {
   .profile-container button {
     width: 100%;
   }
-}
 
+  /* Ensure links and images are properly aligned for mobile view */
+  nav ul li a {
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 
 
