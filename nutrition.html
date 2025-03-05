@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrition Plan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tracker.html">Exercise Tracker</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h1>Nutrition Plan</h1>
+    <p><b>Track your meals and their nutritional values.</b></p>
+
+    <!-- Meal List -->
+    <div class="meal-list">
+      <div class="meal-card">
+        <img src="images/chicken%20salad.jpg" alt="Chicken Salad">
+        <h3>Chicken Salad</h3>
+        <p>Protein: 30g | Fat: 10g | Carbs: 15g</p>
+        <button onclick="addMeal('Chicken Salad', 30, 10, 15)">Add to Tracker</button>
+      </div>
+      <div class="meal-card">
+        <img src="images/grilled%20fish.jpg" alt="Grilled Fish">
+        <h3>Grilled Fish</h3>
+        <p>Protein: 25g | Fat: 5g | Carbs: 5g</p>
+        <button onclick="addMeal('Grilled Fish', 25, 5, 5)">Add to Tracker</button>
+      </div>
+      <div class="meal-card">
+        <img src="images/avacado%20toast.avif" alt="Avocado Toast">
+        <h3>Avocado Toast</h3>
+        <p>Protein: 8g | Fat: 14g | Carbs: 24g</p>
+        <button onclick="addMeal('Avocado Toast', 8, 14, 24)">Add to Tracker</button>
+      </div>
+      <div class="meal-card">
+        <img src="images/oatmeal.jpg" alt="Oatmeal">
+        <h3>Oatmeal</h3>
+        <p>Protein: 6g | Fat: 2g | Carbs: 30g</p>
+        <button onclick="addMeal('Oatmeal', 6, 2, 30)">Add to Tracker</button>
+      </div>
+       <div class="meal-card">
+        <img src="images/chickenbreast.jpg" alt="Chicken Breast">
+        <h3>Chicken Breast</h3>
+        <p>Protein: 31g | Fat: 4g | Carbs: 2g</p>
+        <button onclick="addMeal('Chicken Breast', 31, 4, 2)">Add to Tracker</button>
+      </div>
+       <div class="meal-card">
+        <img src="images/brownrice.jpg" alt="Brown Rice">
+        <h3>Brown Rice</h3>
+        <p>Protein: 5g | Fat: 2g | Carbs: 45g</p>
+        <button onclick="addMeal('Brown Rice', 5, 2, 45)">Add to Tracker</button>
+      </div>
+       <div class="meal-card">
+        <img src="images/eggs.jpg" alt="Eggs">
+        <h3>Eggs</h3>
+        <p>Protein: 12g | Fat: 10g | Carbs: 2g</p>
+        <button onclick="addMeal('Eggs', 12, 10, 2)">Add to Tracker</button>
+      </div>
+       <div class="meal-card">
+        <img src="images/kingfish.webp" alt="Kingklip Fish">
+        <h3>Kingklip Fish</h3>
+        <p>Protein: 20g | Fat: 3g | Carbs: 1g</p>
+        <button onclick="addMeal('Kingklip Fish', 20, 3, 1)">Add to Tracker</button>
+      </div>
+    </div>
+
+    <!-- Nutrition Tracker Display -->
+    <div id="nutritionTracker">
+      <h2>Added Meals</h2>
+      <ul id="addedMeals"></ul>
+      <div id="totalMacros">
+        Total Protein: 0g | Total Fat: 0g | Total Carbs: 0g
+      </div>
+    </div>
+
+    <!-- Refresh Section -->
+    <section id="refreshSection">
+      <button id="refreshFoodDataBtn">Start Fresh</button>
+    </section>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fitness Tracker. All Rights Reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tracker.html">Exercise Tracker</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="profile-container">
+    <form id="profileForm">
+      <h2>Profile</h2>
+
+      <!-- Profile Picture Section -->
+      <div class="profile-picture-container">
+        <img id="profilePic" src="default-profile.jpg" alt="Profile Picture">
+      </div>
+
+      <!-- Name Input -->
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+
+      <!-- Email Input -->
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+
+      <!-- Profile Picture Upload -->
+      <input type="file" id="profilePicInput" name="profilePic">
+
+      <!-- Save Button -->
+      <button type="submit">Save Profile</button>
+    </form>
+
+    <!-- Back Button -->
+    <button id="backButton" onclick="goBack()">Back</button>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>
+
+

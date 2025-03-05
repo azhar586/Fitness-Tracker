@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header Navigation */
+header {
+  background-color: #004080;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s ease;
+}
+
+/* Hover Effect on Links */
+nav ul li a:hover {
+  background-color: white;
+  color: #004080;
+  border-radius: 5px;
+}
+
+/* Section Styling */
+.section {
+  padding: 30px;
+  text-align: center;
+}
+
+/* Card Design */
+.exercise-list, .meal-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.exercise-card, .meal-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  width: 300px;  /* Increased the width */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.exercise-card:hover, .meal-card:hover {
+  transform: scale(1.05);
+}
+
+/* Images inside Cards */
+.exercise-card img, .meal-card img {
+  width: 100%;
+  height: 200px;  /* Increased the height */
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Ensure all images are the same size */
+img {
+  width: 300px;  /* Increased the width */
+  height: 200px;  /* Increased the height */
+  object-fit: cover;
+}
+
+/* Buttons */
+button {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #003366;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  background-color: #004080;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+}
+/* Home Page Images */
+#home .home-images img {
+  width: 400px;  /* Increased the width */
+  height: 300px;  /* Increased the height */
+  object-fit: cover;
+  margin: 10px;
+}

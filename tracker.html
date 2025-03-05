@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tracker.html">Exercise Tracker</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h1>Exercise Tracker</h1>
+    <p><b>Track your exercises and calories burned.</b></p>
+
+    <!-- Exercise List -->
+    <div class="exercise-list">
+      <div class="exercise-card">
+        <img src="images/running.jpg" alt="Running">
+        <h3>Running</h3>
+        <p>Calories burned: 300 kcal</p>
+        <button onclick="addExercise('Running', 300)">Add to Tracker</button>
+      </div>
+      <div class="exercise-card">
+        <img src="images/cycling.webp" alt="Cycling">
+        <h3>Cycling</h3>
+        <p>Calories burned: 250 kcal</p>
+        <button onclick="addExercise('Cycling', 250)">Add to Tracker</button>
+      </div>
+      <div class="exercise-card">
+        <img src="images/swimming.webp" alt="Swimming">
+        <h3>Swimming</h3>
+        <p>Calories burned: 500 kcal</p>
+        <button onclick="addExercise('Swimming', 500)">Add to Tracker</button>
+      </div>
+        <div class="exercise-card">
+        <img src="images/weights.webp" alt="Swimming">
+        <h3>Weightlifting</h3>
+        <p>Calories burned: 530 kcal</p>
+        <button onclick="addExercise('Weightlifting', 530)">Add to Tracker</button>
+      </div>
+       <div class="exercise-card">
+        <img src="images/jumprope.jpg" alt="Swimming">
+        <h3>Jump-Rope</h3>
+        <p>Calories burned: 540 kcal</p>
+        <button onclick="addExercise('Jump-Rope', 540)">Add to Tracker</button>
+      </div>
+       <div class="exercise-card">
+        <img src="images/pushup.jpg" alt="Swimming">
+        <h3>Push-ups</h3>
+        <p>Calories burned: 340 kcal</p>
+        <button onclick="addExercise('Push-ups', 340)">Add to Tracker</button>
+      </div>
+       <div class="exercise-card">
+        <img src="images/benchpress.jpg" alt="Swimming">
+        <h3>Bench-Press</h3>
+        <p>Calories burned: 380 kcal</p>
+        <button onclick="addExercise('Bench-Press', 380)">Add to Tracker</button>
+      </div>
+       <div class="exercise-card">
+        <img src="images/pullups.jpg" alt="Swimming">
+        <h3>Pull-ups</h3>
+        <p>Calories burned: 390 kcal</p>
+        <button onclick="addExercise('Pull-ups', 390)">Add to Tracker</button>
+      </div>
+    </div>
+     
+
+    <!-- Exercise Tracker Display -->
+    <div id="trackerDisplay">
+      <h2>Added Exercises</h2>
+      <ul id="addedExercises"></ul>
+      <div id="totalCalories">Total Calories Burned: 0 kcal</div>
+    </div>
+
+    <!-- Refresh Section -->
+    <section id="refreshSection">
+      <button id="refreshExerciseDataBtn">Start Fresh</button>
+    </section>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fitness Tracker. All Rights Reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
