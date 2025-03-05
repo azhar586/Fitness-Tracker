@@ -36,23 +36,24 @@
       <input type="email" id="email" name="email" placeholder="Enter your email">
 
       <!-- Profile Picture Upload -->
-      <input type="file" id="profilePicInput" name="profilePic">
+      <input type="file" id="profilePicInput" name="profilePic" accept="image/*">
 
       <!-- Save Button -->
       <button type="submit">Save Profile</button>
     </form>
 
-    <!-- Back Button -->
-    <button id="backButton" onclick="goBack()">Back</button>
+    <!-- Display Profile Information -->
+    <div id="displayProfile">
+      <h2>Saved Profile</h2>
+      <div class="profile-picture-container">
+        <img id="savedProfilePic" src="default-profile.jpg" alt="Saved Profile Picture">
+      </div>
+      <p id="savedName"></p>
+      <p id="savedEmail"></p>
+    </div>
   </div>
 
-  <script>
-    function goBack() {
-      window.history.back();
-    }
-  </script>
-
+  <script src="scripts.js"></script>
 </body>
 </html>
-
 
